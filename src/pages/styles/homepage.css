@@ -1,0 +1,114 @@
+@import "../../data/styles.css";
+
+.homepage-logo-container {
+	display: flex;
+	align-items: center;
+	padding-top: 130px;
+}
+
+.homepage-container {
+	padding: 20px; /* Added padding for consistency */
+}
+
+.homepage-first-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px; /* Added bottom padding */
+}
+
+.homepage-first-area-left-side {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.homepage-title {
+	font-size: 36px; /* Increased font size for prominence */
+	font-weight: 800; /* Bolder title */
+	color: #333; /* Darker color for visibility */
+	width: 85%; /* Maintain width */
+	margin-bottom: 10px; /* Space below title */
+}
+
+.homepage-subtitle {
+	font-size: 18px; /* Larger subtitle */
+	color: #555; /* Slightly lighter color */
+	width: 85%; /* Maintain width */
+	line-height: 1.5; /* Improved readability */
+}
+
+.homepage-first-area-right-side {
+	display: flex;
+	align-items: center;
+}
+
+.homepage-image-container {
+	width: 370px;
+	height: 370px;
+}
+
+.homepage-image-wrapper {
+	overflow: hidden;
+	border-radius: 15%; /* Softer corners */
+	transform: rotate(3deg);
+}
+
+.homepage-image-wrapper img {
+	width: 100%;
+	transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.homepage-image-wrapper:hover img {
+	transform: scale(1.05); /* Scale effect on hover */
+}
+
+.homepage-after-title {
+	display: flex;
+	flex-direction: column; /* Stack articles and works */
+}
+
+.homepage-projects {
+	padding-top: 40px;
+}
+
+.homepage-articles {
+	padding-top: 30px;
+	margin-left: -30px;
+}
+
+.homepage-article {
+	padding-bottom: 5px;
+}
+
+.homepage-works {
+	padding-top: 30px;
+}
+
+@media (max-width: 1024px) {
+	.homepage-first-area {
+		flex-direction: column;
+	}
+
+	.homepage-first-area-left-side {
+		width: 100%; /* Full width on smaller screens */
+	}
+
+	.homepage-title, .homepage-subtitle {
+		width: 100%; /* Full width */
+		margin-top: 20px; /* Added margin for spacing */
+	}
+
+	.homepage-first-area-right-side {
+		width: 100%;
+		padding-top: 20px; /* Added padding for spacing */
+	}
+
+	.homepage-image-container {
+		padding-top: 20px; /* Adjust spacing */
+	}
+
+	.homepage-after-title {
+		flex-direction: column;
+	}
+}

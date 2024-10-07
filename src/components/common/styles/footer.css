@@ -1,0 +1,81 @@
+@import "../../../data/styles.css";
+
+.footer {
+	display: flex;
+	padding: 25px 0; /* Combined top and bottom padding */
+	margin-top: 50px;
+	align-items: center;
+}
+
+.footer-links {
+	flex-basis: 50%; /* Retained for layout purposes */
+	margin-left: -40px; /* Adjust as needed for visual balance */
+}
+
+.footer-nav-link-list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-nav-link-item {
+	font-weight: bold;
+	font-size: 80%;
+}
+
+.footer-nav-link-list a {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+.footer-nav-link-list a:hover {
+	color: var(--link-color);
+}
+
+.footer-credits {
+	flex-basis: 50%; /* Ensures it stays aligned with the footer links */
+	text-align: right; /* Right-aligned for better appearance */
+}
+
+.footer-credits-text {
+	color: var(--tertiary-color);
+	font-size: 14px;
+}
+
+
+.footer-socials {
+	display: flex;
+	justify-content: center; /* Center social icons */
+	align-items: center;
+}
+
+.footer-social-icon {
+	padding-right: 15px; /* Standardize spacing */
+	font-size: 25px;
+	transition: transform 0.2s ease-in-out; /* Scale effect on hover */
+	color: var(--secondary-color);
+}
+
+.footer-social-icon:hover {
+	transform: scale(1.1); /* Slightly enlarge on hover */
+	color: var(--primary-color); /* Change color on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+	.footer {
+		flex-direction: column; /* Stack items vertically */
+		align-items: center; /* Center items on small screens */
+	}
+
+	.footer-links {
+		justify-content: center; /* Center links */
+		width: 100%; /* Full width on mobile */
+	}
+
+	.footer-credits {
+		text-align: center; /* Center credits text on mobile */
+	}
+}

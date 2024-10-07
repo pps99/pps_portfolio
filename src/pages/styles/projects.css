@@ -1,0 +1,59 @@
+.projects-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+}
+
+.projects-logo {
+	display: flex;
+	position: fixed;
+	border: 2px solid #0077b6; /* More pronounced border color */
+	border-radius: 50%;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+	top: 4vh;
+	z-index: 999;
+	transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.projects-logo:hover {
+	transform: scale(1.1); /* Scale effect on hover */
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	height: auto; /* Adjust height for content */
+	margin: 0;
+	padding-top: 120px;
+	padding: 0 20px; /* Side padding for better spacing */
+}
+
+.title.projects-title {
+	font-size: 32px; /* Larger title for emphasis */
+	color: #333; /* Darker color for better visibility */
+	margin-top: 100px;
+	margin-bottom: 15px; /* Space below title */
+	text-align: center; /* Centered title */
+}
+
+.subtitle.projects-subtitle {
+	font-size: 16px;
+	color: #555; /* Slightly lighter color */
+	margin-bottom: 30px; /* Space below subtitle */
+	text-align: left; /* Centered subtitle */
+	line-height: 1.6; /* Better readability */
+}
+
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Center projects in the container */
+	gap: 20px; /* Space between projects */
+}
+
+@media (max-width: 600px) {
+	.projects-container {
+		padding-top: 60px;
+		padding: 0 10px; /* Less padding on smaller screens */
+	}
+}

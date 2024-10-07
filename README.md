@@ -8,6 +8,7 @@ Reactfolio is a modern and customizable personal portfolio web template built us
 
 Live demo here: <a href="https://portfolio-project-livid-six.vercel.app/about" target="_blank">My Portfolio</a>
 <br/>
+
 <!-- Readme here: <a href="https://tharindu.dev/portfolio/reactfolio/" target="_blank">tharindu.dev/portfolio/reactfolio/</a> -->
 
 -   [Features](#-features)
@@ -135,8 +136,8 @@ Directory: `/src/data/`
     	{
     		page: "home",
     		description:
-    			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-    		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+    			"I am a backend developer with expertise in Ruby On Rails,Java,Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
+    		keywords: ["Pyae", "Pyae Phyo", "Pyae Phyo Shan"],
     	},
     ];
     ```

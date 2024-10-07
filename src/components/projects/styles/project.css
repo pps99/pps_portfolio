@@ -1,0 +1,74 @@
+@import "../../../data/styles.css";
+
+.project {
+	border-radius: 20px;
+	opacity: 0.9;
+	height: 100%;
+	background: #ffffff; /* White background for contrast */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.project:hover {
+	transform: translateY(-5px); /* Lift effect on hover */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.project a {
+	text-decoration: none;
+	color: inherit; /* Inherit color from parent */
+}
+
+.project-container {
+	padding: 30px;
+	text-align: center; /* Centered text */
+}
+
+.project-logo {
+	width: 50px; /* Larger logo size */
+	margin-bottom: 15px; /* Spacing below logo */
+}
+
+.project-logo img {
+	width: 100%;
+	border-radius: 10%; /* Rounded corners for logos */
+}
+
+.project-title {
+	font-family: var(--secondary-font);
+	color: var(--primary-color);
+	font-size: 18px; /* Slightly larger title */
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.project-description {
+    color: var(--secondary-color);
+    font-size: 14px; /* Slightly larger description */
+    margin-bottom: 15px; /* Space before link */
+    height: 200px; /* Fixed height for uniformity */
+    overflow: hidden; /* Hide overflow text */
+    display: -webkit-box; /* For WebKit browsers */
+    -webkit-line-clamp: 3; /* Limits to 3 lines of text */
+    -webkit-box-orient: vertical; /* Required for line clamping */
+}
+.project-link {
+	display: flex;
+	align-items: center;
+	color: var(--link-color); /* Consistent link color */
+	font-size: 14px; /* Consistent link size */
+}
+
+.project-link-icon {
+	margin-right: 5px; /* Space between icon and text */
+}
+
+.project-link-text {
+	font-weight: 700;
+}
+
+@media (max-width: 600px) {
+	.project {
+		height: auto; /* Allow height to adjust based on content */
+	}
+}
