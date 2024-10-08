@@ -51,7 +51,6 @@
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 15%; /* Softer corners */
-	transform: rotate(3deg);
 }
 
 .homepage-image-wrapper img {
